@@ -565,7 +565,7 @@ header .navbar-nav .nav-link:hover {
 /*Media 320*/
 @media screen and (max-width: 320px) {
   .inicio {
-    height: 150vh;
+    height: 210vh;
   }
   .inicio .contenedor-banner {
     padding: 20px;
