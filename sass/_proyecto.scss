@@ -1,0 +1,54 @@
+/* Proyectos */
+.proyectos{
+    @extend .ini;
+
+    .contenido-proyectos {
+        font-family: $font1;
+        font-size: 28px;
+        color: var(--text-title);
+        text-align: center;
+        padding-top: 100px;
+        text-decoration: none;
+        padding-bottom: 10px;
+
+        .box-container{
+            width:100%;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            gap:10rem;
+    
+            .proyecto {
+                img {
+                height: 250px;
+                width: 460px;
+                object-fit: cover;
+                border-radius: 0.5rem;
+                &:hover{
+                    color: var(--text-title);
+                    box-shadow: 0 0 45px var(--text-title);
+                    }
+                }  
+            }
+        }
+        h3 {
+            font-family: $font1;
+            font-size: 28px;
+            color: var(--text-title);
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            padding-bottom: 10px;
+        }
+        h4 {
+            text-align: center;
+            color: #ed6a72;
+            font-family:$font2;
+            margin: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}

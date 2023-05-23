@@ -1,0 +1,662 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0.4rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--text-dark);
+  border-radius: 0.5rem;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+:root {
+  --text-title: #a6373f;
+  --bg-dark: rgba(31, 31, 30, 0.6);
+  --text-dark: #1e2326;
+}
+
+header {
+  background-color: var(--bg-dark);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+header .header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+header .container-fluid .navbar-brand {
+  font-family: "Gruppo", cursive;
+  font-size: 36px;
+  text-align: center;
+  color: var(--text-title);
+  font-weight: 200;
+}
+header .navbar-nav .nav-link {
+  font-family: "Raleway", sans-serif;
+  color: antiquewhite;
+  font-size: 14px;
+  text-align: right;
+  margin: 0 20px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  justify-content: space-between;
+  font-weight: 200;
+}
+header .navbar-nav .nav-link:hover {
+  color: var(--text-title);
+}
+
+.ini, .tecnologias, .inicio, .proyectos, .contacto {
+  background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgb(30, 35, 38)), url(../img/monit.jpg);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+/* Inicio */
+.inicio {
+  background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgb(30, 35, 38)), url(../img/monit.jpg);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+}
+.inicio .contenedor-banner {
+  padding: 20px;
+  padding-top: 155px;
+  margin: auto;
+  background-color: var(--text-dark);
+  max-width: 350px;
+  margin-top: 170px;
+  text-align: center;
+  border-radius: 40px;
+}
+.inicio .contenedor-banner img {
+  margin-top: 40px;
+  border-radius: 8px solid var(--text-title);
+  width: 80%;
+  margin: auto;
+  border-radius: 7px;
+}
+.inicio .contenedor-banner h1 {
+  padding-top: 14px;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+.inicio .contenedor-banner h2 {
+  font-size: 15px;
+  font-weight: normal;
+  padding-top: 5px;
+}
+.inicio .contenedor-banner .redes a {
+  color: #fff;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transform: 0.3s;
+}
+.inicio .contenedor-banner .redes a:hover {
+  color: var(--text-title);
+  box-shadow: 0 0 34px var(--text-title);
+}
+
+/* Contactos */
+.contacto form {
+  background-color: hsla(0, 2%, 21%, 0.48);
+  padding-top: 40px;
+  margin: auto;
+  max-width: 500px;
+  margin-top: 70px;
+  text-align: center;
+  border-radius: 40px;
+}
+.contacto form h3 {
+  font-size: 30px;
+  font-family: "Gruppo", cursive;
+  color: var(--text-title);
+  margin: 0;
+  margin-bottom: 33px;
+}
+.contacto form label {
+  display: flex;
+  font-size: 18px;
+  font-family: "Gruppo", cursive;
+  color: var(--text-title);
+  letter-spacing: 3;
+  left: 0;
+}
+.contacto form input, .contacto form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  border-bottom: white thin solid;
+  outline: none;
+  text-decoration: none;
+}
+.contacto form textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+.contacto form #boton {
+  background-color: var(--bg-dark);
+  color: var(--text-title);
+}
+
+/* Proyectos */
+.proyectos .contenido-proyectos {
+  font-family: "Gruppo", cursive;
+  font-size: 28px;
+  color: var(--text-title);
+  text-align: center;
+  padding-top: 100px;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+.proyectos .contenido-proyectos .box-container {
+  width: 100%;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  gap: 10rem;
+}
+.proyectos .contenido-proyectos .box-container .proyecto img {
+  height: 250px;
+  width: 460px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+.proyectos .contenido-proyectos .box-container .proyecto img:hover {
+  color: var(--text-title);
+  box-shadow: 0 0 45px var(--text-title);
+}
+.proyectos .contenido-proyectos h3 {
+  font-family: "Gruppo", cursive;
+  font-size: 28px;
+  color: var(--text-title);
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+.proyectos .contenido-proyectos h4 {
+  text-align: center;
+  color: #ed6a72;
+  font-family: "Raleway", sans-serif;
+  margin: 20px;
+}
+.proyectos .contenido-proyectos a {
+  text-decoration: none;
+}
+
+/* Sobre Mi */
+.inicio .sobremi {
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+}
+.inicio .sobremi h3 {
+  font-family: "Gruppo", cursive;
+  color: var(--text-title);
+  font-size: 28px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+.inicio .sobremi .contenido-seccion p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.inicio .sobremi .contenido-seccion p span {
+  color: #ed6a72;
+  font-weight: bold;
+}
+.inicio .sobremi .fila {
+  display: flex;
+}
+.inicio .sobremi .fila .col {
+  width: 100%;
+}
+.inicio .sobremi .fila .col h3 {
+  font-size: 28px;
+  font-family: "Gruppo", cursive;
+  margin-bottom: 25px;
+}
+.inicio .sobremi .fila .col ul {
+  list-style: none;
+}
+.inicio .sobremi .fila .col ul li {
+  margin: 12px 0;
+  font-size: 18px;
+}
+.inicio .sobremi .fila .col ul li strong {
+  font-size: 15px;
+  display: inline-block;
+  color: #ed6a72;
+  width: 100px;
+}
+.inicio .sobremi .fila .col ul li span {
+  background-color: tan;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.inicio .sobremi .fila .col .contenedor-intereses {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.inicio .sobremi .fila .col .contenedor-intereses .interes {
+  width: 100px;
+  height: 100px;
+  background-color: #1e2326;
+  margin: 0 15px 15px 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.inicio .sobremi .fila .col .contenedor-intereses .interes:hover {
+  background-color: #ed6a72;
+  color: #1e2326;
+}
+.inicio .sobremi .fila .col .contenedor-intereses .interes i {
+  font-size: 26px;
+}
+.inicio .sobremi button {
+  cursor: pointer;
+  border: 2px solid #ed6a72;
+  background-color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  color: #ed6a72;
+  font-size: 17px;
+  z-index: 99;
+  position: relative;
+  letter-spacing: 2px;
+}
+.inicio .sobremi button a {
+  text-decoration: none;
+  color: #ed6a72;
+}
+
+/* Tecnologias */
+.tecnologias .container-tecnologia {
+  padding-top: 100px;
+}
+.tecnologias .container-tecnologia h3 {
+  display: flex;
+  font-size: 30px;
+  font-family: "Gruppo", cursive;
+  color: var(--text-title);
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.tecnologias .container-tecnologia p {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+}
+.tecnologias .container-tecnologia .box-tecno {
+  background-color: hsla(0, 6%, 79%, 0.48);
+  border-radius: 40px;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 3.4rem;
+}
+.tecnologias .container-tecnologia .box-tecno .tecno img {
+  width: 150px;
+  height: 150px;
+}
+.tecnologias .container-tecnologia .box-tecno .tecno img:hover {
+  animation-name: efecto;
+  animation-duration: 1.3s;
+  color: var(--bg-dark);
+  filter: drop-shadow(8px 8px 9px var(--text-dark));
+}
+@keyframes efecto {
+  from {
+    height: 100px;
+  }
+  to {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Media 1450 */
+@media screen and (max-width: 1450px) {
+  .inicio {
+    height: 160vh;
+  }
+  .inicio .contenedor-banner {
+    padding: 20px;
+    margin-top: 120px;
+  }
+  .inicio .sobremi {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .inicio .sobremi h3 {
+    padding-top: 60px;
+  }
+  .inicio .sobremi .contenido-seccion {
+    font-size: 10px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+  }
+  .tecnologias {
+    height: 155vh;
+  }
+  .contacto {
+    height: 170vh;
+  }
+}
+/* Media 1133*/
+@media screen and (max-width: 1133px) {
+  .proyectos {
+    height: 255vh;
+  }
+  .proyectos .contenido-proyectos {
+    font-family: "Gruppo", cursive;
+    font-size: 25px;
+    color: var(--text-title);
+    text-align: center;
+    padding-top: 50px;
+    text-decoration: none;
+    padding-bottom: 6px;
+  }
+  .proyectos .contenido-proyectos .box-container {
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10rem;
+  }
+  .proyectos .contenido-proyectos .box-container .proyecto img {
+    height: 250px;
+    width: 460px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  .proyectos .contenido-proyectos .box-container .proyecto img:hover {
+    color: var(--text-title);
+    box-shadow: 0 0 45px var(--text-title);
+  }
+  .proyectos .contenido-proyectos h4 {
+    text-align: center;
+    color: #ed6a72;
+    font-family: "Raleway", sans-serif;
+    margin: 20px;
+    font-size: 20px;
+  }
+  .tecnologias {
+    height: 150vh;
+  }
+}
+/*Media 800px*/
+@media screen and (max-width: 800px) {
+  header .container-fluid .navbar-brand {
+    font-family: "Gruppo", cursive;
+    font-size: 27px;
+    text-align: center;
+    color: var(--text-title);
+    font-weight: 200;
+  }
+  .inicio {
+    height: 210vh;
+  }
+  .inicio .sobremi .contenido-seccion {
+    font-size: 10px;
+    line-height: 22px;
+    padding-left: 15px;
+  }
+  .inicio .sobremi h3 {
+    padding-top: 25px;
+  }
+  .inicio .fila {
+    display: flex;
+    flex-direction: column;
+  }
+  .inicio .fila .col {
+    width: 70%;
+  }
+  .inicio .fila .col ul li {
+    padding-left: 14%;
+  }
+  .inicio .fila .col .contenedor-intereses {
+    padding-left: 14%;
+  }
+  .proyectos .contenido-proyectos .box-container {
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 6rem;
+  }
+  .proyectos .contenido-proyectos .box-container .proyecto img {
+    height: 203px;
+    width: 393px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  .proyectos .contenido-proyectos .box-container .proyecto img:hover {
+    color: var(--text-title);
+    box-shadow: 0 0 45px var(--text-title);
+  }
+  .tecnologias {
+    height: 150vh;
+  }
+  .tecnologias .container-tecnologia p {
+    font-size: 14px;
+    margin: 15px;
+    display: flex;
+    justify-content: end;
+  }
+  .tecnologias .container-tecnologia .box-tecno {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 160px);
+    text-align: center;
+    gap: 3.4rem;
+  }
+}
+/* Media 480*/
+@media screen and (max-width: 450px) {
+  header .container-fluid .navbar-brand {
+    font-family: "Gruppo", cursive;
+    font-size: 20px;
+    text-align: center;
+    color: var(--text-title);
+    font-weight: 200;
+  }
+  .inicio {
+    height: 150vh;
+  }
+  .inicio .sobremi h3 {
+    padding-top: 50px;
+  }
+  .inicio .sobremi .fila {
+    display: flex;
+    flex-direction: column;
+  }
+  .inicio .sobremi .fila .col {
+    width: 100%;
+  }
+  .contacto form,
+  .contacto textarea {
+    max-width: 88%;
+  }
+  .tecnologias {
+    height: 130vh;
+  }
+  .tecnologias .container-tecnologia p {
+    font-size: 12px;
+    margin: 15px;
+    display: flex;
+    justify-content: end;
+  }
+  .tecnologias .container-tecnologia .box-tecno {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 140px);
+    text-align: center;
+    gap: 0.4rem;
+  }
+  .tecnologias .container-tecnologia .box-tecno .tecno img {
+    width: 100px;
+    height: 100px;
+  }
+}
+/*Media 320*/
+@media screen and (max-width: 320px) {
+  .inicio {
+    height: 150vh;
+  }
+  .inicio .contenedor-banner {
+    padding: 20px;
+    margin-top: 70px;
+  }
+  .inicio .sobremi {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .inicio .sobremi h3 {
+    font-size: 15px;
+    padding-top: 100px;
+  }
+  .inicio .sobremi .contenido-seccion {
+    font-size: 10px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+  }
+  .inicio .sobremi .contenido-seccion p {
+    font-size: 10px;
+    margin-right: 8px;
+  }
+  .inicio .sobremi .fila .col h3 {
+    font-size: 18px;
+    font-family: "Gruppo", cursive;
+    margin-bottom: 25px;
+  }
+  .inicio .sobremi .fila .col ul {
+    list-style: none;
+  }
+  .inicio .sobremi .fila .col ul li {
+    margin: 12px 0;
+    font-size: 10px;
+    margin-left: -88px;
+  }
+  .inicio .sobremi .fila .col .contenedor-intereses {
+    padding-left: 22%;
+  }
+  .inicio .sobremi .fila .col .contenedor-intereses .interes {
+    width: 50px;
+    height: 50px;
+    background-color: #1e2326;
+    margin: 0 15px 15px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  .inicio .sobremi .fila .col .contenedor-intereses .interes i {
+    font-size: 10px;
+  }
+  .inicio .sobremi button {
+    cursor: pointer;
+    border: 2px solid #ed6a72;
+    background-color: transparent;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    color: #ed6a72;
+    font-size: 14px;
+    z-index: 99;
+    position: relative;
+    letter-spacing: 2px;
+  }
+  .proyectos .contenido-proyectos .box-container .proyecto img {
+    height: 150px;
+    width: 260px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
+/* Footer */
+.footer {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e2326;
+  color: #fff;
+  margin-top: auto;
+}
+.footer span {
+  margin: 5px;
+  color: #ed6a72;
+}/*# sourceMappingURL=style.css.map */

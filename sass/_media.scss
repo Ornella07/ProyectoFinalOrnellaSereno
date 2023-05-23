@@ -1,0 +1,363 @@
+
+/* Media 1450 */
+@media screen and (max-width: 1450px) {
+    .inicio {
+        height: 160vh;
+    
+        .contenedor-banner {
+            padding: 20px;
+            margin-top: 120px;
+        }
+
+        .sobremi {
+            max-width: 1200px;
+            margin: auto;
+
+            h3 {
+                padding-top: 60px;
+            }
+
+            .contenido-seccion {
+                font-size: 10px;
+                line-height: 22px;
+                margin-bottom: 20px;
+                padding-left: 15px;
+            }
+        }
+        
+    }
+    .tecnologias {
+        height: 155vh;
+    }
+    .contacto {
+        height: 170vh;
+    }
+    
+}
+
+/* Media 1133*/
+@media screen and (max-width: 1133px) {
+    .proyectos {
+        height: 255vh;
+
+        .contenido-proyectos {
+            font-family: $font1;
+            font-size: 25px;
+            color: var(--text-title);
+            text-align: center;
+            padding-top: 50px;
+            text-decoration: none;
+            padding-bottom: 6px;
+
+            .box-container {
+                width: 100%;
+                padding: 30px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(3, 200px);
+                gap: 10rem;
+
+                .proyecto {
+                    img {
+                        height: 250px;
+                        width: 460px;
+                        object-fit: cover;
+                        border-radius: 0.5rem;
+
+                        &:hover {
+                            color: var(--text-title);
+                            box-shadow: 0 0 45px var(--text-title);
+                        }
+                    }
+                }
+            }
+
+            h4 {
+                text-align: center;
+                color: #ed6a72;
+                font-family:$font2;
+                margin: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .tecnologias {
+        height: 150vh;
+    }
+}
+
+/*Media 800px*/
+@media screen and (max-width: 800px) {
+    header {
+        .container-fluid {
+            .navbar-brand {
+                font-family:$font1;
+                font-size: 27px;
+                text-align: center;
+                color: var(--text-title);
+                font-weight: 200;
+            }
+        }
+    }
+
+    .inicio {
+        height: 210vh;
+
+        .sobremi {
+            .contenido-seccion {
+                font-size: 10px;
+                line-height: 22px;
+                padding-left: 15px;
+            }
+
+            h3 {
+                padding-top: 25px;
+            }
+        }
+
+        .fila {
+            display: flex;
+            flex-direction: column;
+
+            .col {
+                width: 70%;
+
+                ul {
+                    li {
+                        padding-left: 14%;
+                    }
+                }
+
+                .contenedor-intereses {
+                    padding-left: 14%;
+                }
+            }
+        }
+    }
+
+    .proyectos {
+        .contenido-proyectos {
+            .box-container {
+                width: 100%;
+                padding: 30px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(3, 200px);
+                gap: 6rem;
+
+                .proyecto {
+                    img {
+                        height: 203px;
+                        width: 393px;
+                        object-fit: cover;
+                        border-radius: 0.5rem;
+
+                        &:hover {
+                            color: var(--text-title);
+                            box-shadow: 0 0 45px var(--text-title);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tecnologias {
+        height: 150vh;
+
+        .container-tecnologia {
+            p {
+                font-size: 14px;
+                margin: 15px;
+                display: flex;
+                justify-content: end;
+            }
+
+            .box-tecno {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 160px);
+                text-align: center;
+                gap: 3.4rem;
+            }
+        }
+    }
+}
+
+/* Media 480*/
+@media screen and (max-width: 450px) {
+    header {
+        .container-fluid {
+            .navbar-brand {
+                font-family: $font1;
+                font-size: 20px;
+                text-align: center;
+                color: var(--text-title);
+                font-weight: 200;
+            }
+        }
+    }
+    .inicio {
+        height: 150vh;
+        .sobremi {
+            h3 {
+                padding-top: 50px;
+            }
+            .fila {
+                display: flex;
+                flex-direction: column;
+
+                .col {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .contacto {
+        form,
+        textarea {
+            max-width: 88%;
+        }
+    }
+
+    .tecnologias {
+        height: 130vh;
+
+        .container-tecnologia {
+            p {
+                font-size: 12px;
+                margin: 15px;
+                display: flex;
+                justify-content: end;
+            }
+
+            .box-tecno {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 140px);
+                text-align: center;
+                gap: 0.4rem;
+
+                .tecno {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Media 320*/
+@media screen and (max-width: 320px) {
+    .inicio {
+        // height: 100%;
+        height: 150vh;
+
+        .contenedor-banner {
+            padding: 20px;
+            margin-top: 70px;
+        }
+
+        .sobremi {
+            max-width: 1200px;
+            margin: auto;
+
+            h3 {
+                font-size: 15px;
+                padding-top: 100px;
+            }
+
+            .contenido-seccion {
+                font-size: 10px;
+                line-height: 22px;
+                margin-bottom: 20px;
+                padding-left: 15px;
+
+                p {
+                    font-size: 10px;
+                    margin-right: 8px;
+                }
+            }
+
+            .fila {
+                .col {
+                    h3 {
+                        font-size: 18px;
+                        font-family: $font1;
+                        margin-bottom: 25px;
+                    }
+
+                    ul {
+                        list-style: none;
+
+                        li {
+                            margin: 12px 0;
+                            font-size: 10px;
+                            margin-left: -88px;
+                        }
+                    }
+
+                    .contenedor-intereses {
+                        padding-left: 22%;
+
+                        .interes {
+                            width: 50px;
+                            height: 50px;
+                            background-color: #1e2326;
+                            margin: 0 15px 15px 0;
+                            border-radius: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            transition: 0.3s;
+
+                            i {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            button {
+                cursor: pointer;
+                border: 2px solid #ed6a72;
+                background-color: transparent;
+                width: fit-content;
+                display: block;
+                margin: 20px auto;
+                padding: 10px 20px;
+                color: #ed6a72;
+                font-size: 14px;
+                z-index: 99;
+                position: relative;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    .proyectos {
+        .contenido-proyectos {
+            .box-container {
+                .proyecto {
+                    img {
+                        height: 150px;
+                        width: 260px;
+                        object-fit: cover;
+                        border-radius: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}
+

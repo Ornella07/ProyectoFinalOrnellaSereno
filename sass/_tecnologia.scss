@@ -1,0 +1,57 @@
+/* Tecnologias */
+.tecnologias {
+    @extend .ini;
+
+    .container-tecnologia {
+        padding-top: 100px;
+        h3 {
+            display: flex;
+            font-size: 30px;
+            font-family:$font1;
+            color: var(--text-title);
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        p {
+            font-size: 19px;
+            font-family:$font2;
+        }
+        .box-tecno {
+            background-color: hsla(0, 6%, 79%, 0.48);
+            border-radius: 40px;
+            width: 100%;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: $colum-tecno;
+            grid-template-rows: $row-tecno;
+            gap: 3.4rem;
+
+            .tecno {
+                img {
+                    width: 150px;
+                    height: 150px;
+
+                    &:hover {
+                        animation-name: efecto;
+                        animation-duration: 1.3s;
+                        color: var(--bg-dark);
+                        filter: drop-shadow(8px 8px 9px var(--text-dark));
+                    }
+                }
+            }
+
+        }
+
+        @keyframes efecto {
+            from {
+                height: 100px;
+            }
+
+            to {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+
+}

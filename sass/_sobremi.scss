@@ -1,0 +1,106 @@
+/* Sobre Mi */
+.inicio{    
+    @extend .ini;
+    
+    .sobremi{
+        
+        max-width: 1200px;
+        margin: auto;
+        height: 100%;
+    
+    h3{
+        font-family: $font1;
+        color: var(--text-title);
+        font-size: 28px;
+        text-align: center;
+        padding:20px;
+        margin-top: 50px;
+
+    }
+    .contenido-seccion {
+        p{
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    
+        span{
+            color: #ed6a72;
+            font-weight: bold;
+        }
+        }   
+    }
+    .fila{
+        display: flex;
+        .col{
+            width: 100%;
+            h3{
+                font-size: 28px;
+                font-family: $font1;
+                margin-bottom: 25px;
+            }
+            ul{
+                list-style: none;
+                li{
+                    margin: 12px 0;
+                    font-size: 18px;
+                    strong{
+                        font-size: 15px;
+                        display: inline-block;
+                        color: #ed6a72;
+                        width: 50px + 50px;
+                    } 
+                    span{
+                        background-color:tan;
+                        padding: 3px;
+                        font-weight: bold;
+                        border-radius: 5px;
+                    }
+                }
+            
+            }
+            .contenedor-intereses{
+                display: flex;
+                flex-wrap: nowrap;
+                .interes{
+                    width:50px + 50px;
+                    height:50px + 50px;
+                    background-color: #1e2326;
+                    margin: 0 15px 15px 0;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.3s;
+                    &:hover{
+                        background-color: #ed6a72;
+                        color: #1e2326;
+                    }
+                    i{
+                        font-size: 26px; 
+                    }
+                }
+            }
+
+        }
+    }
+    button{
+        cursor: pointer;
+        border: 2px solid #ed6a72;
+        background-color: transparent;
+        width: fit-content;
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        color: #ed6a72;
+        font-size: 17px;
+        z-index: 99;
+        position: relative;
+        letter-spacing: 2px;
+        a{
+            text-decoration: none;
+            color: #ed6a72;
+        }
+    }
+    }
+}

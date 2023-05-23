@@ -1,0 +1,91 @@
+@import  url("https://fonts.googleapis.com/css2?family=Gruppo&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,400&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+    width: 0.4rem;
+    }
+    &::-webkit-scrollbar-track {
+    background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+    background: var(--text-dark);
+    border-radius: 0.5rem;
+    }
+}
+
+body{
+    font-family:"Raleway", sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+:root{
+    --text-title: #a6373f;
+    --bg-dark: rgba(31, 31, 30, 0.6);
+    --text-dark: #1e2326;
+}
+header {
+    background-color: var(--bg-dark);
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 99;
+    
+    .header{
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+    }
+    .container-fluid {
+        .navbar-brand{
+            font-family: "Gruppo", cursive;
+            font-size: 36px;
+            text-align: center;
+            color: var(--text-title);
+            font-weight: 200;
+        }
+    }
+    .navbar-nav {
+        .nav-link{
+            font-family: "Raleway", sans-serif;
+            color:antiquewhite ;
+            font-size: 14px;
+            text-align: right;
+            margin: 0 20px;
+            transition: 0.5s;
+            text-transform: uppercase;
+            justify-content: space-between;
+            font-weight: 200;
+    
+            &:hover{
+                color: var(--text-title);
+            }
+        }
+    }
+}
+
+
+
+
+@import "variables";
+@import "inicio";
+@import "contacto";
+@import "proyecto";
+@import "sobremi";
+@import "tecnologia";
+@import "media";
+@import "footer";

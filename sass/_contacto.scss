@@ -1,0 +1,53 @@
+
+/* Contactos */
+.contacto{
+    @extend .ini;
+
+    form{
+        background-color: hsla(0, 2%, 21%, 0.48);
+        padding-top: 40px;
+        margin: auto;
+        max-width: 500px;
+        margin-top:70px;
+        text-align:center;
+        border-radius: 40px;
+        
+        h3{
+            font-size: 30px;
+            font-family: $font1;
+            color: var(--text-title);
+            margin: 0;
+            margin-bottom: 33px;
+        }
+        label{
+            display: flex;
+            font-size: 18px;
+            font-family: $font1;
+            color: var(--text-title);
+            letter-spacing: 3;
+            left: 0;
+        }
+        input, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            font-size: 18px;
+            background-color: transparent;
+            border:none;
+            border-bottom: white thin solid;
+            outline: none;
+            text-decoration: none;
+        }
+        textarea{
+            min-height: 100px;
+            max-height: 200px;
+            max-width: 100%;
+        
+        }
+        #boton{
+            background-color: var(--bg-dark);
+            color: var(--text-title);
+        }
+    }
+}

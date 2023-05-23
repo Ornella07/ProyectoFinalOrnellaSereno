@@ -1,0 +1,15 @@
+
+/* Footer */
+.footer{
+    font-family: $font2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e2326;
+    color: #fff;
+    margin-top: auto;
+    span{
+        margin: 5px;
+        color: #ed6a72;
+    }
+}
