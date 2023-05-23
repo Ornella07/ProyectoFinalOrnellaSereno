@@ -92,7 +92,7 @@ header .navbar-nav .nav-link:hover {
 }
 .inicio .contenedor-banner {
   padding: 20px;
-  padding-top: 155px;
+  padding-top: 60px;
   margin: auto;
   background-color: var(--text-dark);
   max-width: 350px;
