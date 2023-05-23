@@ -499,7 +499,7 @@ header .navbar-nav .nav-link:hover {
     box-shadow: 0 0 45px var(--text-title);
   }
   .tecnologias {
-    height: 150vh;
+    height: 180vh;
   }
   .tecnologias .container-tecnologia p {
     font-size: 14px;
